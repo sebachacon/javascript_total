@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>Fecha y hora</title>
+</head>
+<body>
+    <p>
+        <button onclick="mostrarFecha()">Click aqui</button>
+    </p>
+    <script>
+        function mostrarFecha(){
+            let hoy = new Date();
+            let fecha = hoy.toLocaleDateString('es-ES');
+            alert("La fecha de hoy es:" + fecha);
+        }
+    </script>
+</body>
+</html>
