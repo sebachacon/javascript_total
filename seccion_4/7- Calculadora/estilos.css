@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    background-color: rgb(147, 241, 241);
+}
+
+.Titulos {
+    text-align: center;
+    color: rgb(5, 5, 5);
+    font-family: serif;
+}
+
+.Containers {
+    border-radius: 5px;
+    border-color: rgb(40, 43, 231);
+    border-style: solid;
+    width: 150px;
+    height: 38px;
+    font-size: 18px;
+    display: inline-block
+}
+
+.Botones {
+    width: 15%;
+    height: 45px;
+    padding: 10px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#Contenido {
+    background-color: white;
+    padding: 18px;
+    border: 2px solid rgb(40, 43, 231);
+    width: 150px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+}
