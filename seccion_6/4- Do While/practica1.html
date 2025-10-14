@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vueltas con do while</title>
+</head>
+<body>
+    <script>
+        function mostrarVueltas(vueltas) {
+            let contador = 1; 
+            do {
+                document.write(`Vuelta numero: ` + contador + "<br>");
+                contador++; 
+            } while (contador <= vueltas); 
+        }  
+        let vueltas = prompt("Ingrese el numero de vueltas: ")
+        mostrarVueltas(vueltas)
+    </script>
+</body>
+</html>
