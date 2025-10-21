@@ -1,0 +1,40 @@
+<!doctype html>
+<head>
+  <title>Boletín de Calificaciones</title>
+  <link rel="stylesheet" href="boletin.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1 id="nombre-estudiante">Estudiante: Sebastián Chacón Vargas</h1>
+    </header>
+
+    <section class="notas-section">
+      <h2>Notas registradas</h2>
+      <ul id="lista-notas" class="lista-notas" aria-live="polite"></ul>
+    </section>
+
+    <section class="controles">
+      <button id="btn-promedio">Calcular promedio</button>
+      <button id="btn-mas-alta">Buscar nota más alta</button>
+      <button id="btn-aplazados">Consultar aplazados</button>
+    </section>
+
+    <section class="resultados" aria-live="polite">
+      <div class="resultado-item">
+        <strong>Promedio:</strong> <span id="resultado-promedio">—</span>
+      </div>
+      <div class="resultado-item">
+        <strong>Nota más alta:</strong> <span id="resultado-mas-alta">—</span>
+      </div>
+      <div class="resultado-item">
+        <strong>¿Hay aplazados?</strong> <span id="resultado-aplazados">—</span>
+      </div>
+    </section>
+
+ 
+  </main>
+
+  <script src="boletin.js"></script>
+</body>
+</html>

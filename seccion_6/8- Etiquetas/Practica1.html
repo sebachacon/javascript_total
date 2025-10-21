@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Práctica 1</title>
+</head>
+<body>
+  <script>
+    function testLoop() {
+      let miArray = [[2, 4, 5], [3, 0, 6], [9, 4, 7]];
+
+      outerLoop:
+      for (let i = 0; i < miArray.length; i++) {
+        for (let j = 0; j < miArray[i].length; j++) {
+          console.log(miArray[i][j]);
+
+          if (miArray[i][j] === 0) {
+            console.log();
+            break outerLoop; 
+          }
+        }
+      }
+    }
+
+    testLoop();
+  </script>
+</body>
+</html>
