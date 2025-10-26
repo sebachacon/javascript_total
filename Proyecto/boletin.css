@@ -1,75 +1,102 @@
-:root{
-  --bg:#f7f9fc;
-  --card:#ffffff;
-  --accent:#2b6cb0;
-  --text:#14324a;
-  --muted:#666;
+/* --- Estilos Generales --- */
+
+body {
+    /* Define un contenedor centrado y blanco como en la imagen */
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background:var(--bg);
-  color:var(--text);
+.logo {
+    /* Centra y dimensiona el escudo */
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin: 0 auto 10px;
 }
 
-.container{
-  max-width:760px;
-  margin:28px auto;
-  padding:20px;
-  background:var(--card);
-  border-radius:10px;
-  box-shadow:0 6px 24px rgba(20,50,80,0.08);
+header h1 {
+    /*(título principal) */
+    color: #cc0000;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    }
+
+.titulo {
+    /* "Alumno: Sebastian Chacon Vargas"*/
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000080;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
-.header h1{
-  margin:0 0 6px 0;
-  font-size:1.4rem;
+.notas {
+    text-align: left;
+    padding-left: 20px;
 }
 
-.meta{ margin:0 0 12px 0; color:var(--muted); }
-
-.notas-section h2{ margin:10px 0; font-size:1.05rem; }
-.lista-notas{
-  list-style:none;
-  padding:8px;
-  margin:0 0 16px 0;
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-}
-.lista-notas li{
-  padding:8px 12px;
-  background:#eef6ff;
-  border-radius:6px;
-  border:1px solid rgba(43,108,176,0.08);
-  font-weight:600;
+.Notas {
+    /* Título "Notas:" */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-.controles{
-  display:flex;
-  gap:8px;
-  margin-bottom:16px;
+.lista li {
+    /* El texto de la nota es negro */
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
-button{
-  padding:10px 12px;
-  border:0;
-  border-radius:8px;
-  cursor:pointer;
-  background:var(--accent);
-  color:white;
-  font-weight:600;
-}
-button:active{ transform:translateY(1px); }
-button:focus{ outline:3px solid rgba(43,108,176,0.18); }
 
-.resultados{
-  padding:12px;
-  border-radius:8px;
-  background:#fafafa;
-  border:1px solid rgba(0,0,0,0.03);
-}
-.resultado-item{ margin:6px 0; font-size:1rem; }
+/* --- Secciones de Botones y Resultados --- */
 
-.footer{ margin-top:18px; color:var(--muted); text-align:center; }
+.seccionBotones {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para los títulos de resultado (Promedio, Nota más alta, Aplazo) */
+.seccionBotones h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+/* Estilo de los botones */
+.seccionBotones button {
+    /* Estilo de caja con borde negro */
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 0;
+    display: inline-block; /* Permite que el span de resultado se ponga al lado */
+    width: 200px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 15px; /* Espacio entre el botón y el resultado */
+}
+
+/* Estilo para el resultado */
+.seccionBotones span {
+    font-weight: normal; 
+    font-size: 18px;
+    color: #000000;
+}
+
+.seccionBotones button:hover {
+    background-color: #f0f0f0;
+}
