@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="boletin.css">
 </head>
 
-<body onload="listarNotas()"> 
+<body onload="listarNotas()"> <!-- Crea la lista de notas cuando se carga la página -->
+  
     <header>
         <img src="images.jpg" alt="logo" class="logo">
         <h1>Bienvenido a tu boletin estudiantil</h1>
         <h2 class="titulo">Alumno: Sebastian Chacon Vargas</h2>
     </header>
 
-    <div class="notas">
+    <div class="notas"> <!-- Aqui se muestran las notas -->
         <h3 class="Notas">Notas:</h3>
-        <ul id="listaNotas" class="lista"></ul> 
+        <ul id="listaNotas" class="lista"></ul> <!-- Aqui se escribiran las notas con la funcion listarNotas -->
     </div>
 
+    <!-- Los div son contenedores donde se mostrara el resultado -->
     <div class="seccionBotones">
         <button onclick="calcularPromedio()">Calcular Promedio</button>
     <h3>Promedio: <span id="promedio"></span>
